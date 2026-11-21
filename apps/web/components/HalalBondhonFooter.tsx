@@ -242,7 +242,9 @@ export default function HalalBondhonFooter({ lang }: HalalBondhonFooterProps) {
         <div className="max-w-7xl mx-auto px-4 py-3.5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-emerald-100/95 text-center md:text-left">
           <span>{f.copyright}</span>
           <span className="font-medium text-white">{f.footerCenter}</span>
-          <span>{f.designedBy}</span>
+          <span className="text-[#e5be54] font-semibold">
+            Designed by Nazmus Sakib
+          </span>
         </div>
       </div>
     </footer>
