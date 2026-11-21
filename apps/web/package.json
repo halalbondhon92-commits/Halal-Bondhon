@@ -12,10 +12,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
     "@workspace/ui": "*",
     "bcryptjs": "^3.0.3",
     "cn": "^0.5.2",
     "jose": "^6.2.18",
+    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.76.0",
     "mongoose": "^9.12.2",
     "next": "16.4.5",
