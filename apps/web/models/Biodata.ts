@@ -21,6 +21,7 @@ export interface IBiodata extends Document {
   financialDetails: string;
   photoUrl: string;
   status: "pending" | "approved" | "rejected";
+  isFeatured: boolean;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -54,6 +55,10 @@ const BiodataSchema = new Schema<IBiodata>(
       type: String,
       enum: ["pending", "approved", "rejected"],
       default: "approved",
+    },
+    isFeatured: {
+      type: Boolean,
+      default: false,
     },
   },
   { timestamps: true }
